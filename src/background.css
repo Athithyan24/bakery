@@ -1,0 +1,34 @@
+/* background.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  /* Change this to a color briefly to see if the body is visible */
+  background-color: #effbb8; 
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* This pushes it BEHIND the dashboard */
+}
+
+.d1, .d2, .d3, .d4 {
+  position: absolute;
+  pointer-events: none;
+  background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-size: 2700px 1500px;
+  background-repeat: no-repeat;
+  /* Add this to ensure they have height/width */
+  min-height: 100px; 
+  min-width: 100px;
+}
+
+/* Ensure your Dashboard container doesn't have a background that blocks the view */
+.section-A {
+  background: transparent !important;
+}
