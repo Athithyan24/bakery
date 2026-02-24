@@ -1,12 +1,20 @@
 import "./App.css";
 import Dashboard from "./dashboard";
-import BackgroundAnimation from "./backgroundanimation";
+import Products from "./Products";
+import { CartProvider } from "./CartContext";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <BackgroundAnimation />
-      <Dashboard />
+      <CartProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/products/:category" element={<Products />} /> 
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
     </>
   );
 }
