@@ -4,18 +4,16 @@ import snacks from "./assets/snacks.png";
 import celebrations from "./assets/celebrations.png";
 import icecreams from "./assets/icecreams.png";
 import TemporaryDrawer from "./drawer";
+import sweets from "./assets/sweets.png";
 export default function Dashboard() {
   return (
     <>
       <div className="relative bg-transparent">
         <section className="section-A">
           <div className="relative flex items-center justify-center bg-fuchsia-950 p-5 min-h-25">
-            {/* Drawer sits on the left without pushing the title */}
             <div className="absolute left-5">
               <TemporaryDrawer />
             </div>
-
-            {/* Title sits in the middle of the parent */}
             <div className="text-center text-amber-400">
               <h1 className="text-5xl font-semibold">TECH FRESH BAKERY</h1>
             </div>
@@ -83,39 +81,36 @@ export default function Dashboard() {
         </section>
         <section className="section-B">
           <div className="flex align-middle justify-center p-5 gap-5 bg">
-            
             <section className="section_two my-5 p-5 gap-5">
               <div>
                 <div className="flex m-5 p-5 gap-5 bg-fuchsia-200 rounded-2xl hover:scale-105 transition-all duration-300">
                   <div className="text-center content-center">
-                    <h1 className="text-3xl font-bold text-black">Cakes</h1>
+                    <h1 className="text-3xl font-bold text-black">Ice Creams</h1>
                     <h2 className="text-sm text-black">
-                      Indulge in our irresistible cakes.
+                      icecreams are the perfect treat to
                     </h2>
-                    <h1 className="text-sm text-black">
-                      A slice of happiness in every bite.
-                    </h1>
+                    <h1 className="text-sm text-black">beat the heat.</h1>
                   </div>
                   <div>
                     <img
-                      src={cakes}
-                      alt="Cakes"
+                      src={icecreams}
+                      alt="Ice Creams"
                       className="w-40 hover:rotate-20 hover:scale-120 transition-all duration-500"
                     />
                   </div>
                 </div>
                 <div className="flex m-5 p-5 gap-5 bg-emerald-200 rounded-2xl hover:scale-105 transition-all duration-300">
                   <div className="text-center content-center ">
-                    <h1 className="text-3xl font-bold text-black">Snacks</h1>
+                    <h1 className="text-3xl font-bold text-black">Sweets</h1>
                     <h2 className="text-sm text-black">
-                      Satisfy your cravings with our
+                      sweets are the perfect way to satisfy 
                     </h2>
-                    <h1 className="text-sm text-black">delicious snacks.</h1>
+                    <h1 className="text-sm text-black">your sweet tooth </h1>
                   </div>
                   <div>
                     <img
-                      src={snacks}
-                      alt="Snacks"
+                      src={sweets}
+                      alt="Sweets"
                       className="w-40 hover:rotate-20 hover:scale-120 transition-all duration-500"
                     />
                   </div>
